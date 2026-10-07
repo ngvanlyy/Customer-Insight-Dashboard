@@ -2,7 +2,14 @@
 
 **Power BI · DAX · RFM Analysis · K-Means Clustering · Customer Analytics**
 
-> 🔒 **Confidential Client Project — Household Appliance Service Provider**  
+The final dashboard was developed using **Microsoft Power BI**, with **DAX** measures and interactive visualisations.
+
+### 🔗 Interactive Dashboard
+
+**[View Interactive Power BI Dashboard](https://app.powerbi.com/links/yHe2DQjru9?ctid=5d0aa6ea-6620-4863-9e21-9ecb140222bc&pbi_source=linkShare)**
+
+> Dashboard availability depends on the sharing permissions of the original Power BI publication.
+
 > **Project Year:** 2023
 
 A customer analytics and business intelligence project developed for a household appliance company's customer service application.
@@ -224,18 +231,6 @@ Satisfaction showed some deterioration during periods of exceptionally high serv
 ### ⚙️ Operational Performance Variation
 
 Service KPIs varied across stations and channels, providing opportunities to identify high-performing locations and areas where operational improvements could have the greatest impact.
-
----
-
-## 📊 Power BI Dashboard
-
-The final dashboard was developed using **Microsoft Power BI**, with **DAX** measures and interactive visualisations.
-
-### 🔗 Interactive Dashboard
-
-**[View Interactive Power BI Dashboard](https://app.powerbi.com/links/yHe2DQjru9?ctid=5d0aa6ea-6620-4863-9e21-9ecb140222bc&pbi_source=linkShare)**
-
-> Dashboard availability depends on the sharing permissions of the original Power BI publication.
 
 ---
 
