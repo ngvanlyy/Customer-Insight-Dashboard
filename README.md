@@ -332,8 +332,6 @@ Customer-Insight-Dashboard/
     ├── 03-customer-satisfaction.png
     ├── 04-rfm-groups.png
     └── 05-service-analysis.png
-```
-
 ---
 
 ## 📌 Project Summary
