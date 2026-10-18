@@ -6,7 +6,7 @@ The final dashboard was developed using **Microsoft Power BI**, with **DAX** mea
 
 ### 🔗 Interactive Dashboard
 
-**[View Interactive Power BI Dashboard](https://drive.google.com/file/d/1BdVWX5p5oncMbj2wIbuwNW_MYGzRqAi8/view?usp=sharing)**
+**[View Power BI Dashboard](https://drive.google.com/file/d/1BdVWX5p5oncMbj2wIbuwNW_MYGzRqAi8/view?usp=sharing)**
 
 > Dashboard availability depends on the sharing permissions of the original Power BI publication.
 
