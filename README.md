@@ -1,342 +1,93 @@
 # 📊 Customer Insight Dashboard
 
-**Power BI · DAX · RFM Analysis · K-Means Clustering · Customer Analytics**
 
-The final dashboard was developed using **Microsoft Power BI**, with **DAX** measures and interactive visualisations.
+A Power BI dashboard for the customer service app of a household appliance service company (client confidential, 2023). It shows which customers are most valuable, whether they stay, how satisfied they are and where service operations fall short, so the team can target outreach and protect service quality.
 
-### 🔗 Interactive Dashboard
+Power BI, DAX, RFM analysis, K-Means clustering
 
-**[View Power BI Dashboard](https://drive.google.com/file/d/1BdVWX5p5oncMbj2wIbuwNW_MYGzRqAi8/view?usp=sharing)**
+Period analysed: April 2022 to March 2023. Customer-level pages (02 to 05) are filtered to personal customers.
 
-> Dashboard availability depends on the sharing permissions of the original Power BI publication.
-
-> **Project Year:** 2023
-
-A customer analytics and business intelligence project developed for a household appliance company's customer service application.
-
-The project combines **RFM-based customer segmentation, K-Means clustering, customer behaviour analysis, satisfaction analytics, retention metrics and interactive Power BI reporting** to support customer outreach and service-quality decisions.
+Dashboard file: [View on Google Drive](https://drive.google.com/file/d/1BdVWX5p5oncMbj2wIbuwNW_MYGzRqAi8/view?usp=sharing)
 
 ---
 
-## 📌 Project Overview
-
-Customer service applications generate large volumes of data from customer interactions, service requests, orders and satisfaction feedback.
-
-This project transformed customer and service data into actionable insights through:
-
-- 👥 **Customer Segmentation**
-- 💰 **Customer Value Analysis**
-- 📈 **Revenue & Service Analytics**
-- 🔄 **Retention Analysis**
-- 😊 **Customer Satisfaction Monitoring**
-- 📱 **Customer Engagement Analysis**
-- 🎯 **Customer Outreach Strategy**
-- ⚙️ **Service Quality Monitoring**
-
-The final solution was implemented as an interactive **Power BI dashboard**.
-
----
-
-## 🎯 Business Objectives
-
-The analysis was designed to answer key business questions:
-
-- Which customer groups are the most valuable?
-- How can customers be segmented based on their behaviour?
-- How can different customer segments support targeted outreach?
-- How does customer activity change over time?
-- What are the major patterns in customer satisfaction?
-- What does customer retention look like?
-- How engaged are customers with the service application?
-- Does high service demand have an impact on customer experience?
-- How effectively is the service operation performing across stations and channels?
-
----
-
-## 🧩 Analytical Approach
-
-```text
-                 👥 Customer & Service Data
-                           │
-                           ▼
-                  🧹 Data Preparation
-                           │
-                           ▼
-                  🔧 Feature Engineering
-                           │
-              ┌────────────┴────────────┐
-              ▼                         ▼
-       📊 RFM Analysis             📈 KPI Analysis
-              │                         │
-              ▼                         ├── Satisfaction
-      🤖 K-Means Clustering             ├── Retention
-              │                         ├── DAU / MAU
-              │                         ├── Resolution Rate
-              │                         └── Service Performance
-              │
-              └────────────┬────────────┘
-                           ▼
-                  📊 Power BI Dashboard
-                           │
-                           ▼
-                  💡 Customer Insights
-                           │
-                           ▼
-             🎯 Outreach & Service Strategy
-```
+## Business problem
 
----
+The company handled about 62,000 service orders in the period, through phone, email and its mobile app. Management needed answers to a few practical questions:
 
-## 👥 Customer Segmentation
+- Which customers bring the most value, and which ones are at risk of leaving?
+- Do customers come back after their first order?
+- Are customers satisfied, and what do the unhappy ones say?
+- Which stations and channels deliver good service, and where does it break down?
 
-### RFM Analysis
+Without answers, outreach could not be targeted and service quality was hard to monitor.
 
-Customers were analysed using three behavioural dimensions:
+## What I did
 
-| Metric | Definition |
-|---|---|
-| 🕐 **Recency** | How recently the customer interacted with the service |
-| 🔢 **Frequency** | How frequently the customer used the service |
-| 💰 **Monetary** | Customer value based on service activity |
+- Prepared customer, order and feedback data and built the KPIs as DAX measures: revenue, orders, satisfaction, retention rate, DAU/MAU, resolution time, dispatch on time and first-visit completion.
+- Segmented customers by Recency, Frequency and Monetary value (RFM) and grouped them with K-Means, so each group could be compared on revenue, lifetime value and satisfaction.
+- Built a five-page dashboard: overview, customer analysis, satisfaction, RFM groups and service details.
+- I led the analytical work and the Power BI team, and turned the results into the insights and recommendations below.
 
-The resulting RFM features were used for **K-Means clustering**, producing **7 customer groups**.
+## Key insights
 
-The dashboard compares the groups by:
+1. **A small group of customers carries the value.** Champions (2,785 customers) spend about 4.7 million VND each on average and have a lifetime value of about 6.9 million VND. The largest group by far is new customers (28,085), who have ordered once and spent about 110,000 VND on average.
+2. **Customers are happy but few come back.** Satisfaction is 97.13% and the average rating is 4.95 out of 5, yet the customer retention rate is only 11.46%.
+3. **Phone brings the volume, email and the app bring the value.** Phone handled about 28,000 orders against 17,000 by email and 7,000 by the app. But the average customer value is 0.77 million VND for email and 0.64 million for the app, against 0.39 million for phone.
+4. **Problems are rare but poorly explained.** Only 364 of about 32,900 pieces of feedback were negative (1.1%). Service quality is the most common reason, but about 60% of negative feedback has no comment. Also, 36% of customers leave no rating at all.
+5. **Dispatch on time is the weakest service KPI.** It is 69.14%, against 85.87% for first-visit completion and 81.83% for same-day completion. By station it ranges from 66% to 93%. 16.5% of orders were cancelled.
+6. **Revenue fell through the period.** Quarterly revenue dropped from 8.9 billion VND in Q1 to 1.8 billion VND in Q4, and order volume fell with it.
 
-- Number of customers
-- Average recency
-- Average frequency
-- Average monetary value
-- Revenue
-- Customer lifetime value
-- Customer satisfaction score
-- Order frequency and value bands
+## Recommendations
 
-This provides a behavioural basis for differentiated customer outreach rather than treating the entire customer base as a single population.
+1. **Turn one-time customers into repeat customers.** Follow up first orders with warranty or maintenance reminders and offers, starting with the RFM groups that are slipping away.
+2. **Look after the highest-value customers.** Give Champions priority scheduling and proactive service, because losing a few of them costs far more than losing a new customer.
+3. **Move phone customers to the app and email.** These channels already bring higher-value customers, and shifting volume would ease pressure on the phone line.
+4. **Fix on-time dispatch first.** Use the best stations (around 93%) as the benchmark and review the stations near 66% to 71% for scheduling and capacity problems.
+5. **Find out why orders are cancelled.** One in six orders was cancelled, so record a cancellation reason and review it by station and channel.
+6. **Collect more feedback.** Prompt customers for a rating, and ask for a short comment when the rating is low, so negative feedback can be acted on.
 
----
+## Dashboard pages
 
-## 📈 Customer & Service Analytics
+### 01 Overview
+![Overview](Screenshots/01-dashboard-overview.png)
 
-The dashboard brings together multiple dimensions of customer and service performance:
+Revenue, successful orders, active customers, app users, revenue by service and province, and quarterly trends.
 
-- 👥 Customer volume
-- 🧾 Order volume
-- 💰 Revenue
-- 🛠️ Service usage
-- 📅 Quarterly and temporal trends
-- 👤 Customer segments
-- 📍 Geographic performance
-- 📱 Customer acquisition / interaction channels
-- ⚙️ Operational service KPIs
+### 02 Customer analysis
+![Customer analysis](Screenshots/02-customer-analysis.png)
 
-The analysis provides visibility into both **customer behaviour and service-operation performance**.
+Active customers, satisfaction, retention, average customer value, age and gender, warranty status, and orders by channel and service.
 
----
+### 03 Customer satisfaction
+![Customer satisfaction](Screenshots/03-customer-satisfaction.png)
 
-## 😊 Customer Satisfaction
+Ratings, satisfaction score, resolution time, quarterly trends, ratings by channel and station, and positive and negative feedback.
 
-Customer experience was analysed alongside service activity using:
+### 04 Customer overview by RFM
+![Customer overview by RFM](Screenshots/04-rfm-groups.png)
 
-- ⭐ Rating rate
-- 📊 Customer satisfaction score
-- ⭐ Average rating point
-- 😊 Positive feedback
-- 😞 Negative feedback
-- 📅 Quarterly satisfaction trends
-- 📍 Satisfaction by province and station
-- 📱 Satisfaction by channel
-- ⏱️ Service resolution time
+Customer groups compared by revenue, lifetime value, satisfaction, size, recency, frequency and spend.
 
-The dashboard also categorises customer feedback into themes such as:
+### 05 Service details
+![Service details](Screenshots/05-service-analysis.png)
 
-- Service quality
-- Attitude
-- Product quality
-- Service capacity
-- Other feedback categories
+Revenue, orders, cancellations, rating, first-visit completion, dispatch on time, same-day completion and resolution rate by station and channel.
 
-Overall customer satisfaction remained high, while the analysis identified differences across periods, channels and service locations.
+## Data confidentiality
 
----
+This project was completed for a confidential client. The company name is anonymised, and the original customer data and any personal information are not included in this repository. It contains only the dashboard screenshots and the analysis.
 
-## 🔄 Retention & Engagement
-
-The dashboard incorporates customer retention and application engagement metrics including:
-
-### Retention Rate
-Measures the proportion of customers who continue using the service over time.
-
-### DAU
-**Daily Active Users**
-
-Measures daily customer activity within the service application.
-
-### MAU
-**Monthly Active Users**
-
-Measures monthly customer activity.
-
-### DAU / MAU
-Provides an indication of how frequently monthly users engage with the application.
-
----
-
-## ⚙️ Service Performance Analysis
-
-A dedicated service-analysis page evaluates operational performance using KPIs including:
-
-- 💰 Total revenue
-- 🧾 Total orders
-- ✅ Successful orders
-- ❌ Cancelled orders
-- ⭐ Average rating
-- 🚚 Dispatch-on-time performance
-- 🛠️ First-visit completion
-- 📅 Same-day completion
-- 📈 Request resolution rate
-- 📍 Performance by station
-- 📱 Revenue and order contribution by channel
-
-This allows service performance to be compared across quarters, stations and customer channels.
-
----
-
-## 💡 Key Insights
-
-### ☀️ Strong Seasonal Demand
-
-Customer and service activity showed significant variation over time, with demand increasing substantially during peak periods.
-
-### 🛠️ Repair as the Dominant Service
-
-Repair services represented the largest share of service activity, while maintenance represented a smaller but rapidly growing segment.
-
-### 📈 Rapid Maintenance Growth
-
-Maintenance services showed substantially faster growth than repair services, indicating a growing opportunity in preventive and official maintenance.
-
-### 👥 Distinct Customer Segments
-
-RFM and K-Means analysis identified **7 customer groups** with different behavioural profiles, customer values and satisfaction levels.
-
-### 😊 High Customer Satisfaction
-
-Overall customer satisfaction remained very high across the analysed period.
-
-### ⚠️ Peak-Demand Quality Risk
-
-Satisfaction showed some deterioration during periods of exceptionally high service demand, suggesting that operational capacity may influence customer experience.
-
-### ⚙️ Operational Performance Variation
-
-Service KPIs varied across stations and channels, providing opportunities to identify high-performing locations and areas where operational improvements could have the greatest impact.
-
----
-
-## 🖼️ Dashboard Preview
-
-### 📊 01 — Overview
-
-![Dashboard Overview](Screenshots/01-dashboard-overview.png)
-
-Executive-level overview of revenue, successful orders, active customers, application users, service revenue, geographical performance, customer channels and quarterly trends.
-
-### 👥 02 — Customer Analysis
-
-![Customer Analysis](Screenshots/02-customer-analysis.png)
-
-Customer-level analysis covering active customers, satisfaction, retention, average customer value, demographics, warranty status, customer geography and service/channel behaviour.
-
-### 😊 03 — Customer Satisfaction
-
-![Customer Satisfaction](Screenshots/03-customer-satisfaction.png)
-
-Customer experience analysis covering rating rate, average rating, satisfaction score, retention, resolution time, quarterly trends, geographical performance and positive/negative feedback.
-
-### 🎯 04 — Customer Overview by RFM
-
-![Customer Overview by RFM](Screenshots/04-rfm-groups.png)
-
-RFM-focused analysis comparing the **7 customer groups** by revenue, customer lifetime value, satisfaction score, customer count, recency, frequency, monetary value and order-value bands.
-
-### ⚙️ 05 — Service Details Analysis
-
-![Service Details Analysis](Screenshots/05-service-analysis.png)
-
-Operational service analysis covering revenue, orders, cancellations, rating, first-visit completion, dispatch-on-time performance, same-day completion, request-resolution rate, station performance and channel contribution.
-
----
-
-## 🛠️ Tools & Techniques
-
-| Category | Technology / Method |
-|---|---|
-| 📊 Business Intelligence | Power BI |
-| 🧮 Analytical Calculations | DAX |
-| 👥 Customer Segmentation | RFM Analysis |
-| 🤖 Clustering | K-Means |
-| 😊 Customer Experience | Satisfaction / NPS Analysis |
-| 🔄 Retention | Retention Rate |
-| 📱 Engagement | DAU / MAU |
-| ⚙️ Operations | Service KPI Analysis |
-| 📈 Visualisation | Interactive Power BI Dashboard |
-
----
-
-## 👩‍💻 My Role
-
-**Data Analyst / Analytics Lead**
-
-Responsibilities included:
-
-- 📊 Leading the analytical workstream
-- 🧩 Designing the customer segmentation approach
-- 👥 Developing RFM-based customer segments
-- 🤖 Applying K-Means clustering
-- 🧮 Developing DAX measures and KPIs
-- 📈 Designing the Power BI dashboard
-- 😊 Analysing customer satisfaction
-- 🔄 Developing retention and engagement metrics
-- ⚙️ Analysing service operational performance
-- 💡 Translating analytical findings into business insights
-
----
-
-## 🔐 Data Confidentiality
-
-This project was completed for a **confidential client**.
-
-To protect client and customer information:
-
-- 🚫 The original customer dataset is not included
-- 🚫 Personally identifiable information is not included
-- 🚫 The company name has been anonymised
-- 🚫 Client-specific sensitive information has been removed
-- ✅ The repository focuses on analytical methodology, dashboard development and business insights
-
-Only the dashboard screenshots and approved public-facing Power BI link are included in this repository.
-
----
-
-## 📁 Repository Structure
+## Repository structure
 
 ```text
 Customer-Insight-Dashboard/
-│
-├── README.md
-│
-└── Screenshots/
-    ├── 01-dashboard-overview.png
-    ├── 02-customer-analysis.png
-    ├── 03-customer-satisfaction.png
-    ├── 04-rfm-groups.png
-    └── 05-service-analysis.png
----
+  README.md
+  Screenshots/
+    01-dashboard-overview.png
+    02-customer-analysis.png
+    03-customer-satisfaction.png
+    04-rfm-groups.png
+    05-service-analysis.png
+```
 
-## 📌 Project Summary
-
-**Customer Insight Dashboard**  
-*Power BI · DAX · RFM Analysis · K-Means · Customer Analytics*
-
-A customer analytics and service-performance solution combining behavioural segmentation, engagement, retention, satisfaction and operational KPIs to support targeted customer outreach and service-quality decisions.
