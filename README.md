@@ -7,7 +7,7 @@ Power BI, DAX, RFM analysis, K-Means clustering
 
 Period analysed: April 2022 to March 2023. Customer-level pages (02 to 05) are filtered to personal customers.
 
-Dashboard file: [View dashboard]([https://drive.google.com/file/d/1BdVWX5p5oncMbj2wIbuwNW_MYGzRqAi8/view?usp=sharing](https://app.powerbi.com/view?r=eyJrIjoiZGYxNTYyZWUtZjgxMi00MDM2LTg1ZjAtMGQzMjcwNGYyMzVlIiwidCI6IjQ1ZTNmMGE5LWM5NmQtNGRkOS1iOTc1LTc0MjljODBhODAyZiJ9)) 
+Dashboard file: [View dashboard](https://app.powerbi.com/view?r=eyJrIjoiZGYxNTYyZWUtZjgxMi00MDM2LTg1ZjAtMGQzMjcwNGYyMzVlIiwidCI6IjQ1ZTNmMGE5LWM5NmQtNGRkOS1iOTc1LTc0MjljODBhODAyZiJ9) 
 
 ---
 
